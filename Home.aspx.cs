@@ -19,7 +19,7 @@ public partial class Home : System.Web.UI.Page
         emailMessage.From = new MailAddress("erwinthompson.fung@benilde.edu.ph");
         emailMessage.To.Add(new MailAddress("erwinthompsonf@gmail.com"));
         emailMessage.Subject = "Contact";
-        emailMessage.Body = "Name: " + name.Text + "<br/>" + "Email: " + email.Text + "<br/>" + "Phone: " + phone.Text + "<br/>" + "Message: " +  message.Text;
+        emailMessage.Body = "Name: " + name.Text + "<br/>" + "Email: " + email.Text + "<br/>" + "Phone: " + phone.Text + "<br/>" + "Message: " + message.Text;
         emailMessage.IsBodyHtml = true;
         emailMessage.Priority = MailPriority.Normal;
         SmtpClient MailClient = new SmtpClient("smtp.gmail.com", 587);
